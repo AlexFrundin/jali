@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Title</title>
+    <title>Saudialaw</title>
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -13,35 +13,35 @@
 <body>
 
   <section id="home">
-	  {% include 'home.html' %}
-    {% include 'slider_main.html' %}
+	  {% include 'include/home.html' %}
+    {% include 'include/slider_main.html' %}
   </section>
 
   <section id="advantages" class="pt-4 bg-white">
     <div class="container">
-      {% include 'services.html'%}
-      {% include 'news-block.html' %}
+      {% include 'include/services.html'%}
+      {% include 'include/news-block.html' %}
     </div>
   </section>
 
   <section id="form" class="py-4 bg-white">
-    {% include 'payment_order.html' %}
+    {% include 'include/payment_order.html' %}
   </section>
 
   <section id="description" class="py-4 bg-white">
-    {% include 'description.html' %}
+    {% include 'include/description.html' %}
   </section>
 
 	<section id="accordion">
-	  {% include 'accordion.html' %}
+	  {% include 'include/accordion.html' %}
 	</section>
 
 	<section id="feedback-blog" class="bg-white py-5">
-		{% include 'feedback.html'%}
+		{% include 'include/feedback.html'%}
 	</section>
 
-  {% include 'footer.html' %}
-  
+  {% include 'include/footer.html' %}
+
   <a href="#home" class="to-top">
   	<i class="fa fa-chevron-circle-up"></i>
   </a>
@@ -59,6 +59,9 @@ window.onload=function(){
        event.preventDefault();
        var id  = $(this).attr('href');
        $('body,html').animate({scrollTop: $(id).offset().top-40}, 1000);
+       if (id==='#description'){document.title = 'Desription';}
+       else if (id ==='#form'){document.title = 'Payment';}
+
        // return false;
    });}
 
