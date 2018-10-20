@@ -1,0 +1,6 @@
+/__pycache__/
+/DELETE/
+/migrations/
+*.pyc
+*.docx
+*.7z
