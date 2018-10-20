@@ -2,7 +2,7 @@
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '+=xuwg1e9u3%*_s8p2l&#$1zmv#%)cd64-k20s+66#*v8s=wj0'
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,12 +79,13 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = ""
 STATIC_URL = '/static/'
-#STATICFILES_DIRS = (
-#    os.path.join(BASE_DIR, "static/"),
-#    STATIC_ROOT,
-#)
+STATICFILES_DIRS = (
+   os.path.join(BASE_DIR, "static/"),
+   STATIC_ROOT,
+)
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = '/media/'

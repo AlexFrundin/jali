@@ -252,6 +252,12 @@ h1.title.line{
   overflow-y: hidden;
 }
 
+.feedback_size{
+  height:24rem;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+}
+
 .btn-home{
   font-family: Arabic;
     background: transparent;
