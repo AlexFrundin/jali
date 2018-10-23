@@ -33,7 +33,9 @@ if (
   }
 }
 });
-
+function back_(){
+  history.back();
+}
 function hideBlock() {
 var block = $('.to-top');
 if($('body').scrollTop() >= 600) {

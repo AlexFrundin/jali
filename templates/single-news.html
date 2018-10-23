@@ -27,12 +27,14 @@
                    <p1>{{ news.date }}</p1>
                    <img src="{{ news.image.url }}">
                    <p class="mt-5">{{ news.full_desc }}</p>
+                   <button type="button" class="btn btn-news pull-right" onClick="back_()">
+                   BACK
+                   </button>
                </div>
         </div>
     </div>
-
-
 </div>
+
 <br><br><br>
 
 {% include 'include/footer.html' %}
