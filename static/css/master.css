@@ -498,7 +498,7 @@ h1.title.line{
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     border-top: 1px solid #F1F1F1;
 }
@@ -506,7 +506,7 @@ h1.title.line{
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     width: 50px;
     border-top: 1px solid #C68C07;
 }
