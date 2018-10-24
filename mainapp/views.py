@@ -31,6 +31,7 @@ def mainpage(request):
 
 def usluga(request, id):
     args = {}
+    args['mp_9'] = Bottom_footer.objects.get(id=1)
     args['service'] = Services.objects.get(id=id)
     args['all'] = Services.objects.all()
     return render(request, "usluga.html", args)
