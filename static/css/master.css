@@ -372,6 +372,9 @@ h1.title.line{
     color:#fff;
 
 }
+#home .slider .reports .report h2{
+  font-family: Arabic !important;
+}
 #home .slider .reports .report:after{
   font-family: Arabic !important;
     position: absolute;
