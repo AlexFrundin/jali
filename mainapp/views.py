@@ -48,6 +48,7 @@ def news(request):
 
 def snews(request, id):
     args = {}
+    args['mp_9'] = Bottom_footer.objects.get(id=1)
     args['news'] = News.objects.get(id=id)
     return render(request, "single-news.html", args)
 
@@ -71,7 +72,7 @@ def list(request):
     args = {}
     args['data'] = arr
     return render(request, 'list.html', args)
-    
+
 def copy(request):
     args = {}
     return render(request, "mainpage2.html", args)
