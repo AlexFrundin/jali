@@ -372,11 +372,11 @@ h1.title.line{
     color:#fff;
 
 }
-#home .slider .reports .report h2{
+/* #home .slider .reports .report h2{
   font-family: Arabic !important;
-}
+} */
 #home .slider .reports .report:after{
-  font-family: Arabic !important;
+
     position: absolute;
     content: '';
     right: 0;
@@ -386,7 +386,7 @@ h1.title.line{
     height: 100%;
 }
 #home .slider .reports .report.no-line:after{
-  font-family: Arabic !important;
+  
     width: 0;
 }
 #home .slider .ribbon{
