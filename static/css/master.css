@@ -201,19 +201,28 @@ h1.title.line{
     overflow: hidden;
 }
 #carouselBlog .carousel-control-prev{
-    left: -45px;
+  position: absolute;
+  height: 650px;
+  left: -45px;
 }
 #carouselBlog:hover .carousel-control-prev{
+  position: absolute;
+  height: 650px;
     left: 0;
 }
 #carouselBlog .carousel-control-next{
+  position: absolute;
+  height: 650px;
     right: -45px;
 }
 #carouselBlog:hover .carousel-control-next{
+  position: absolute;
+  height: 650px;
     right: 0;
 }
 #carouselBlog .carousel-control-prev,
 #carouselBlog .carousel-control-next{
+
     width: auto;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -386,7 +395,7 @@ h1.title.line{
     height: 100%;
 }
 #home .slider .reports .report.no-line:after{
-  
+
     width: 0;
 }
 #home .slider .ribbon{
