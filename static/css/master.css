@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Arabic";
-  src: url("../static/fonts/arabic.otf");
+  src: url("../fonts/arabic.otf");
 }
 body{
     font-family: Arabic;
