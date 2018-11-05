@@ -16,23 +16,26 @@
   <section id="home">
       {% include 'include/home.html' %}
   	</section>
-  <br><br><br>
+
 
 <div class="container">
+
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-4 text-center">
             <div class="pay-bg">
                 <div class="paycontent">
                     <br><br><br>
-                    <!-- <img src="{% static 'img/pay-bg1.png' %}"> -->
+                      <br>
+                    <br><br><br>
                     <br><br><br>
                     <h1>مرحبا بك</h1>
                     <p>
-                        يقوم المكتـب بالعمل كمستشار خارجي رئيسي أو توفير خدمات قانونية جوهريــة لعدد كبير من الشركات الرائـدة في المجالات الصناعيـة والتجارية والخدمات المختلفـة معتمداً بذلك على الكفاءات الوطنية والعربية والأجنبية لتقديم الخدمات القانونية بأفضل مستوياتها علما بان المكتـب له تعاون دولي وأيضاً مع مكاتب عربية ودولية مختلفة وذلك لمراعاة مصالح موكلي المكتـب وعملائه لنقدم أفضل الخدمات.
-            لمواصلة الدفع 60$</p>
+                      مرحبا بكم
+تم تلقي طلبكم، وسيتم التواصل معكم هاتفيا بأقرب وقت.</p>
                     <br>
                         {{ form.render }}
-
+                        <br>
+                          <br><br><br>
                     <br><br><br>
                 </div>
             </div>
@@ -70,7 +73,7 @@ input{
 body{
     background-image: url({% static 'img/pay-bg1.png'%});
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% auto;
     }
 
 </style>
