@@ -3,7 +3,7 @@
   <h4 class="sub-title text-center pb-0"> وجدنا لنخدم قضيتك </h4>
   <h1 class="title text-center pt-2 mb-5 font-weight-bold"> طلب استشارة </h1>
 
-  <form method="post" action="{% url 'process' %} enctype="multipart/form-data"">
+  <form method="post" action="{% url 'process' %} " enctype="multipart/form-data">
     {% csrf_token %}
     <div class="row">
       <div class="col-12 col-sm-6 col-md-4">
