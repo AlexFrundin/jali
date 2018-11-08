@@ -2,7 +2,7 @@
 /DELETE/
 /migrations/
 settings.py
-db.sqlite3
+*.sqlite3
 *.pyc
 *.docx
 *.7z
