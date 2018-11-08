@@ -2,6 +2,8 @@ from django.db import models
 from django.utils.safestring import mark_safe
 # Create your models here.
 
+def file_directory_path(instance, filename):
+    return 'document/{0}/{1}'.format(instance.phone,filename)
 
 class Consultation(models.Model):
     class Meta:
@@ -14,6 +16,7 @@ class Consultation(models.Model):
     text = models.TextField()
 
     is_paid = models.BooleanField(default=False)
+    file = models.FileField("files", upload_to=file_directory_path, default='')
     def __str__(self):
         return self.phone
 

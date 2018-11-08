@@ -3,8 +3,8 @@ from mainapp.models import *
 
 @admin.register(Consultation)
 class ConsultationAdmin(admin.ModelAdmin):
-    fields = ['name','phone', 'category', 'text','is_paid']
-    list_display = ('name','phone', 'category', 'text','is_paid')
+    fields = ['name','phone', 'category', 'text','is_paid', 'file']
+    list_display = ('name','phone', 'category', 'text','is_paid', 'file')
     list_display_links = ('name','phone')
     list_filter = ('category', 'is_paid')
 

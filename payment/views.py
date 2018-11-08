@@ -14,8 +14,13 @@ def PaymentProcess(request):
         phone = request.POST.get('Phone')
         category = request.POST.get('Dropdown')
         msg =  request.POST.get('Your-message')
+        try:
+            file = request.FILES['file_my']
+        except:
+            file = ''
+        print("file ***************",file)
 
-        gg = Consultation( name=name, phone = phone, category = category, text = msg)
+        gg = Consultation( name=name, phone = phone, category = category, text = msg, file=file)
         gg.save()
 
 
